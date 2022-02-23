@@ -1,4 +1,5 @@
-import 'package:chat_app/modules/models/chat_model.dart';
+import 'package:chat_app/models/chat_model.dart';
+import 'package:chat_app/modules/new_group_screen/new_group_screen.dart';
 import 'package:chat_app/shared/componentes.dart';
 import 'package:flutter/material.dart';
 
@@ -70,9 +71,18 @@ class ContactScreen extends StatelessWidget {
           itemCount: contacts.length + 2,
           itemBuilder: (context, index) {
             if (index == 0) {
-              return ButtonCard(
-                icon: Icons.group,
-                name: 'New group',
+              return InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => NewGroupScreen(),
+                      ));
+                },
+                child: ButtonCard(
+                  icon: Icons.group,
+                  name: 'New group',
+                ),
               );
             } else if (index == 1) {
               return ButtonCard(

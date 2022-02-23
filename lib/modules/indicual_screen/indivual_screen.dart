@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:chat_app/modules/models/chat_model.dart';
+import 'package:chat_app/models/chat_model.dart';
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

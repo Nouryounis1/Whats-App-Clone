@@ -1,7 +1,9 @@
+import 'package:camera/camera.dart';
+import 'package:chat_app/modules/camera_screen/camera_layout.dart';
 import 'package:chat_app/modules/home_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
   runApp(const MyApp());
 }
 

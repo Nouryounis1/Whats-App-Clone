@@ -5,6 +5,7 @@ class ChatModel {
   String? time;
   String? currentMessage;
   String? status;
+  bool? isSelected = false;
 
   ChatModel(
       {this.name,
@@ -12,5 +13,6 @@ class ChatModel {
       this.isGroup,
       this.time,
       this.currentMessage,
-      this.status});
+      this.status,
+      this.isSelected = false});
 }
